@@ -1,0 +1,150 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+.container{
+	width:50%;
+	margin:auto;
+}
+
+
+img{
+	width:2rem;
+	height:2rem;
+	border-radius:50%;
+}
+
+.header-col{
+	display:flex;
+	align-items:center;
+	font-size:24px;
+	 background-color:#008069;
+	height:4rem;
+	justify-content:space-between;
+	color:#fff;
+	position:relative;
+}
+
+.option{
+	position:absolute;
+	top:31%;
+	left:73.3%;
+	list-style:none;
+	background-color:#fff;
+	color:black;
+	box-shadow:0 0 0.1rem;
+	visibility:hidden;
+}
+
+i{
+	cursor:pointer;
+}
+
+.option ul li{
+	padding:0.7rem 1rem;
+	list-style:none;
+	font-size:1rem;
+	cursor:pointer;
+}
+
+.option ul li:hover{
+	cursor:pointer;
+	color:#008069;
+}
+
+/* .more{ */
+	/* position:relative; */
+/* } */
+
+/* .sub-menu li{ */
+	/* position: absolute; */
+    /* top: 82%; */
+    /* left: -60%; */
+    /* background-color: #fff; */
+/* } */
+
+.profile-detail{
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+}
+
+.body-col{
+	background:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYDfG78PFypQoT7ILghkgYxhr4Nqyt43mOXg&usqp=CAU);
+	background-color:#ccc;
+	height:82vh;
+	overflow:overlay;
+	display:flex;
+	text-align:right;
+	justify-content:end;
+}
+
+.timer{
+	font-size:0.9rem;
+	color:#8d8686;
+	text-align:end;
+}
+
+.msgDiv{
+	background-color:rgb(221 252 196);
+	text-align:center;
+	font-size: 1.1rem;
+	margin:1rem 1rem;
+	padding:0.5rem;
+	border-radius:1rem;
+	max-width:fit-content;
+}
+
+.foot{
+	width:100%;
+	background-color:transparent;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	font-size:1.7rem;
+}
+
+.foot i{
+	cursor:pointer;
+	/* color:#7d7c7c; */
+}
+
+
+input{
+	width:30rem;
+	height:2rem;
+	border:none;
+	padding:0 1rem;
+	font-size:1.1rem;
+	border-radius:1rem;
+}
+
+.mic{
+	position:relative;
+	width:2.6rem;
+	height:2.6rem;
+	border-radius:50%;
+	background-color:#008069;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	color:#fff;
+	font-size:1.3rem;
+}
+
+.sendBtn{
+	position:absolute;
+	top: 92.5%;
+    left: 72.1%;
+	width:2.6rem;
+	height:2.6rem;
+	border-radius:50%;
+	background-color:#008069;
+	display:none;
+	align-items:center;
+	justify-content:center;
+	color:#fff;
+	font-size:1.3rem;
+}
