@@ -9,8 +9,11 @@ msg.addEventListener('keydown',textMsg);
 		
 		if(typeof show === "string" || typeof show ==="number"){
 			let parentDiv = e.target.parentNode.parentNode.querySelector('.sendBtn');
-				//	console.log(parentDiv);
+				//console.log(parentDiv);
 				parentDiv.style.display = "flex";
+				
+			let micDiv = e.target.parentNode.parentNode.querySelector('.mic');
+			micDiv.style.display = "none";
 		}	
 	}
 	
@@ -64,6 +67,28 @@ var optionEle = e.target.parentNode.parentNode.querySelector(".option");
 		optionEle.style.visibility = 'hidden';
 		}
 	}
-		
 
+//clip 
+var clip = document.querySelector('.clip');
 	
+	clip.addEventListener('click',openClip);
+	
+	function openClip(e){
+		let smallClipDiv = e.target.querySelector('.clip-row');
+			smallClipDiv.style.visibility = "visible";
+			smallClipDiv.style.top = "-390px";
+			smallClipDiv.style.transition = 'all 0.5s';
+		// console.log(smallClipDiv);
+	}
+	
+var closeClip = document.querySelector('.clip');
+
+		closeClip.addEventListener('dblclick',closeClipDiv);
+		
+		function closeClipDiv(e){
+			let closeClipDiv = e.target.querySelector('.clip-row');
+			closeClipDiv.style.visibility = "hidden";
+			closeClipDiv.style.top = "0px";
+			closeClipDiv.style.transition = "all 0.5s";
+			// console.log(closeClipDiv);
+		}
